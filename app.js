@@ -206,6 +206,21 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
+let fizz = [];
+let buzz = [];
+let fizzbuzz = [];
+
+for (const num of nums) {
+    if (num % 3 === 0) {
+        fizz.push(num); 
+    }
+    if (num % 5 === 0) {
+        buzz.push(num); 
+    }
+    if (num % 3 === 0 && num % 5 === 0) {
+        fizzbuzz.push(num);
+    }
+}
 
 
 console.log('Exercise 12 Results:');
@@ -232,6 +247,7 @@ const numArrays = [
 	[45, 66],
 	[7, 81, 90]
 ];
+let numList = numArrays[numArrays.length - 1];
 
 console.log('Exercise 13 result:', numList);
 
@@ -247,7 +263,14 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
 
+let num = numArrays[2][1];
 
 console.log('Exercise 14 result:', num);
 
