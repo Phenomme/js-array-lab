@@ -71,7 +71,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 let foods = ["pizza","cheeseburger"];
-foods.splice(1, 0, "tofu")
+foods.splice(1, 0, "tofu");
 
 console.log('Exercise 5 result:', foods);
 
@@ -118,8 +118,9 @@ Exercise 8: Finding an index
 
 Complete Exercise 8 in the space below:
 */
-
-
+let foods = ["pizza","cheeseburger"];
+foods.splice(1, 0, "tofu")
+let soyIdx = foods.indexOf("tofu");
 
 console.log('Exercise 8 result:', soyIdx);
 
@@ -137,8 +138,8 @@ Note: The final result should log as:
 
 Complete Exercise 9 in the space below:
 */
-
-
+let foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+let allFoods = foods.join(" -> ");
 
 console.log('Exercise 9 result:', allFoods);
 
@@ -156,6 +157,8 @@ Complete Exercise 10 in the space below:
 */
 
 
+let foods = ["taco", "sushi", "cupcake", "tofu", "cheeseburger"];
+let hasSoup = foods.includes("soup");
 
 console.log('Exercise 10 result:', hasSoup);
 
@@ -173,8 +176,12 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-
-
+let odds = [];
+for(let odd of nums 0) {
+    if(odd %2 !== 0) {
+        odds.push(odd);
+    }
+}
 
 console.log('Exercise 11 result:', odds);
 
